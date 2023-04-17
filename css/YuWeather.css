@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background: grey;
+  /* 背景图片设置 */
+  background-image: url(../image/bg/preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: white;
+}
+
+div {
+  padding: 10px 20px;
+}
+
+#content {
+  margin: 0px auto;
+  max-width: 480px;
+  background: white;
+  box-shadow: 15px 15px 10px black;
+}
+
+#weather {
+  font-size: 2em;
+}
+
+#weather img {
+  vertical-align: middle;
+}
+
+table {
+  margin: 15px auto;
+}
+
+td {
+  padding: 5px 20px;
+}
+
+#line01,
+#line03 {
+  font-size: 1.3em;
+}
+
+#line02,
+#line04 {
+  color: gray;
+}

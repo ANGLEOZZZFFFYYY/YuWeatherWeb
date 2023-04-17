@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天气宇报</title>
+    <link rel="stylesheet" href="css/YuWeather.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/weather.js"></script>
+  </head>
+  <body>
+    <!-- 标题 -->
+    <h1>天气宇报</h1>
+
+    <br>
+
+    <!-- 天气查询板块 -->
+    <div id="content">
+      <!-- 切换城市 -->
+      <div id="location">
+        切换城市：
+        <!-- 和风天气依靠城市ID来查询天气数据，在此处添加你想要添加城市的ID -->
+        <select id="city">
+          <option value="101300101" selected>南宁</option>
+          <option value="101300901">玉林</option>
+          <option value="101300801">贵港</option>
+          <option value="101300501">桂林</option>
+          <option value="101301101">钦州</option>
+          <option value="101301201">河池</option>
+          <option value="101301001">百色</option>
+          <option value="101300301">柳州</option>
+          <option value="101300401">来宾</option>
+          <option value="101300802">桂平</option>
+        </select>
+      </div>
+
+      <!-- 气候温度 -->
+      <div id="weather">
+        <img id="icon"></img>
+        <span id="temp">0</span>℃
+        <span id="text">Unknown</span>
+      </div>
+
+      <!-- 实时数据 -->
+      <table id="now">
+        <tr id="line01">
+          <td><span id="feelsLike">0</span>℃</td>
+          <td><span id="humidity">0</span>%</td>
+          <td><span id="precip">0</span>mm</td>
+        </tr>
+
+        <tr id="line02">
+          <td>体感温度</td>
+          <td>相对湿度</td>
+          <td>降水量</td>
+        </tr>
+
+         <tr id="line03">
+          <td><span id="pressure">0</span>hPa</td>
+          <td><span id="vis">0</span></td>
+          <td><span id="windScale">0</span>
+          <span id="windDir">0</span></td>
+        </tr>
+
+        <tr id="line04">
+          <td>气压</td>
+          <td>能见度</td>
+          <td>风力</td>
+        </tr>
+      </table>
+
+    </div>
+  </body>
+</html>
