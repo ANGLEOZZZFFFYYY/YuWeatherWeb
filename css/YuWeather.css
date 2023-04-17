@@ -18,8 +18,9 @@ div {
 
 #content {
   margin: 0px auto;
-  max-width: 480px;
-  background: white;
+  width: 480px;
+  height: 480px;
+  background: #fff;
   box-shadow: 15px 15px 10px black;
 }
 
